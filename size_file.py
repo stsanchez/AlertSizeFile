@@ -15,9 +15,9 @@ try:
     c = conn.cursor()
     f = conn.cursor()
     c.execute('''SELECT dl.SERVER_IP, dl.id_loc, dl.user_path, rd.ruta_recurso
-                        FROM USERNAME.DB_LOC dl
-                        join USERNAME.RECURSO_DBLOC rd on (dl.ID_LOC = rd.ID_LOC)
-                        WHERE dl.SERVER_IP is not null and actualizar = 'T' and server_ip not like '%10.100.118%' ''')
+                 FROM USERNAME.DB_LOC dl
+                 join USERNAME.RECURSO_DBLOC rd on (dl.ID_LOC = rd.ID_LOC)
+                 WHERE dl.SERVER_IP is not null and actualizar = 'T' and server_ip not like '%10.100.118%' ''')
 
     data = c.fetchall()
 
