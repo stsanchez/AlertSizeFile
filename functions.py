@@ -2,6 +2,7 @@ from email import message
 from email.mime.text import MIMEText
 from smtplib import SMTP
 
+
 #FUNCTION TO SEND AN EMAIL WITH THE INFORMATION OBTAINED AS PARAMETER
 def mail(list):
 
@@ -31,3 +32,4 @@ def mail(list):
     #METHOD TO SEND THE MAIL RECEIVING THE NECESSARY PARAMETERS
     smtp.sendmail(from_address, to_address, mime_message.as_string())
     smtp.quit()
+    

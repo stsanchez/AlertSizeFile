@@ -6,6 +6,7 @@ import time
 import datetime
 import functions
 
+
 #A LIST IS INITIALIZED WITH THE INFORMATION THAT THE MAIL WILL CONTAIN
 mail_information = []
 
